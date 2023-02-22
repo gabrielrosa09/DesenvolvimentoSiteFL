@@ -1,0 +1,48 @@
+.btn {
+  
+    padding: 0.7em 1.3em;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FF0053 0%, #aa0038 100%);
+    text-decoration: none;
+    font-weight:bold;
+    font-size:1.1em; 
+    color: #fff;
+    border-radius:6px;
+    transition:0.3s; 
+}
+.btn:hover { color:#ff84c5; transition:0.3s; }
+@-webkit-keyframes btn-pulsando {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes btn-pulsando {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    color:#ffffff; 
+  }
+}
+.btn-pulsando {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-pulsando:hover, .btn-pulsando:focus, .btn-pulsando:active {
+  -webkit-animation-name: btn-pulsando;
+  animation-name: btn-pulsando;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
