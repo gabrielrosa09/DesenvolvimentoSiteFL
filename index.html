@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>FL Tijolos</title>
     <link rel="icon" type="image/png" href="img/logo.png" />
+    <script>
+      function funcao1()
+      {
+      alert("Email enviado!");
+      }
+      </script>
   </head>
 
   <body>
@@ -171,9 +177,9 @@
                 >Informações Adicionais (Ex: Quantidade, Data, entre outros)</label
               >
             </div>
-            <input type="submit" name="submit" id="submit" />
-      
+            <input type="submit" name="submit" onclick="funcao1()" id="submit" />
           </fieldset>
+          <input type="hidden" name="_next" value="http://localhost:3000/" />
         </form>
       </div>
     </section>
