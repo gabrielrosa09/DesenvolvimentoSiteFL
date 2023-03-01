@@ -158,6 +158,8 @@
   padding: 30px;
 }
 
+/* Parte CSS da Galeria */
+
 .titulo-galeria {
   font-size: 37px;
   letter-spacing: -2px;
@@ -193,6 +195,8 @@
   padding: 10px;
 }
 
+/* Parte CSS da localização */
+
 .local {
   display: flex;
   flex-direction: column;
@@ -215,70 +219,78 @@
   margin-bottom: 30px;
 }
 
-.orcamento {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-}
+/* Parte CSS do formulário */
 
-.titulo-orcamento {
-  font-size: 37px;
-  letter-spacing: -2px;
-  line-height: 35px;
-  text-transform: uppercase;
-  color: #ff2323;
-  font-weight: bold;
-  font-family: "Outfit", sans-serif;
+.box {
   padding: 20px;
+  width: 50%;
+  padding: 80px;
+  font-family: "Outfit", sans-serif;
+  margin: auto;
 }
 
-.texto-form {
-  font-size: 22px;
-  letter-spacing: -1px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: #ff2323;
-  font-weight: 250;
-  font-family: "Outfit";
-  text-align: left;
-  margin: 20px;
-  width: 547px;
-  height: 75px;
-  background-color: #ffffff;
-  border: 3.093022054786987px solid #ff2323;
+fieldset {
+  border: 3px solid #ff2323;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 617px;
-  height: 525px;
-  background-color: #ffffff;
-  border: 8.812009948839348px solid #ff2323;
-  margin-bottom: 30px;
-}
-
-.botao-form {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-left: 120px;
-  padding: 10px;
-  font-size: 40px;
-  letter-spacing: -2px;
-  line-height: 38px;
-  text-transform: uppercase;
+legend {
   color: #ffffff;
-  font-weight: 800;
-  font-family: "Outfit";
-  text-align: left;
-  width: 371px;
-  height: 72px;
+  border: 1px solid #ff2323;
+  padding: 10px;
+  text-align: center;
   background-color: #ff2323;
-  border: 3.093022054786987px solid #ff2323;
+  border-radius: 8px;
 }
+
+.inputBox {
+  position: relative;
+  padding: 10px;
+}
+
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ff2323;
+  outline: none;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput{
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+  top: -20px;
+  font-size: 14px;
+  color: #ff2323;
+}
+
+#submit {
+  background-image: linear-gradient(to right, #ff2323, #ff5353);
+  width: 50%;
+  border: none;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, #ff0c0c, #ff2323);
+}
+
+/* Parte CSS da footer */
 
 .footer {
   background-color: #ff2323;
