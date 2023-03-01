@@ -45,6 +45,8 @@
   text-decoration: none;
   color: #ffffff;
 }
+
+/*
 .home {
   width: 100%;
   background-color: #ffffff;
@@ -79,6 +81,84 @@
   margin-bottom: -10px;
   transform: rotate(-15deg);
 }
+
+*/
+/* Parte CSS da home institucional */
+
+.home {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+}
+
+.texto-azul-1 {
+  padding: 100px 0 0 100px;
+  font-size: 45px;
+  color: #3b3f50;
+  text-align: center;
+}
+
+.texto-azul-2 {
+  padding-left: 100px;
+  margin-top: -25px;
+  font-size: 100px;
+  color: #3b3f50;
+  text-align: center;
+}
+
+.texto-ver-1 {
+  padding-left: 100px;
+  font-size: 65px;
+  color: #ff2323;
+  text-align: center;
+}
+
+.texto-ver-2 {
+  padding-left: 100px;
+  margin-top: -35px;
+  font-size: 85px;
+  color: #ff2323;
+  text-align: center;
+}
+
+.button {
+  margin-top: 20px;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .3s;
+  border-radius: 5px;
+}
+
+.btn-home {
+  background-color: black;
+  color: #ffffff;
+}
+
+.btn-home:hover {
+  background-color: #3b3f50;
+}
+
+.img-homem {
+  margin-top: 60px;
+  width: 480px;
+  height: 560px;
+}
+
+.logo {
+  opacity: 0.3;
+  width: 400px;
+  height: 400px;
+  margin-top: -250px;
+}
+
+/* Parte CSS da informação institucional */
 
 .infos {
   background-color: #ff2323;
