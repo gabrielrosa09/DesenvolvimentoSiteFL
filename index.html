@@ -21,24 +21,24 @@
           <div>FLTIJOLOS</div>
         </div>
         <div class="nav-direita">
-          <a href="#">HOME</a>
-          <a href="#">GALERIA</a>
-          <a href="#">LOCALIZAÇÃO</a>
-          <a href="#">CONTATO</a>
+          <a href="#homeid">HOME</a>
+          <a href="#galeriaid">GALERIA</a>
+          <a href="#localid">LOCALIZAÇÃO</a>
+          <a href="#contatoid">CONTATO</a>
         </div>
       </div>
     </nav>
 
     <!-- HOME -->
 
-    <div class="home">
+    <div class="home" id="homeid">
       <div class="home-esquerda">
         <div class="texto-azul-1">O FUTURO DA CONSTRUÇÃO</div>
         <div class="texto-azul-2">CHEGOU!</div>
         <div class="texto-ver-1">VOCÊ ESTÁ</div>
         <div class="texto-ver-2">PRONTO?</div>
         <div class="button">
-          <a href="#" class="btn btn-home">FAZER ORÇAMENTO</a>
+          <a href="#boxid" class="btn btn-home">FAZER ORÇAMENTO</a>
         </div>
         <img class="logo" src="/img/logo.png" />
       </div>
@@ -71,7 +71,7 @@
     </div>
 
     <!-- GALERIA DE FOTOS -->
-    <div class="galeria">
+    <div class="galeria" id="galeriaid">
       <div class="titulo-galeria">Galeria de Fotos</div>
       <div class="retangulo-fotos">
         <img class="img-galeria" src="/img/galeria1.png" />
@@ -81,7 +81,7 @@
     </div>
 
     <!-- LOCALIZAÇÃO -->
-    <div class="local">
+    <div class="local" id="localid">
       <div class="titulo-local">Onde nós ficamos?</div>
       <div class="img-local">
         <iframe
@@ -98,39 +98,75 @@
 
     <!-- FORMULÁRIO -->
     <section>
-      <div class="box">
-        <form action="">
+      <div class="box" id="boxid">
+        <form
+          target="_blank"
+          action="https://formsubmit.co/FLTijolos@gmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="A FL Tijolos recebeu seu pedido de orçamento! Em breve responderemos."
+          />
+          <input type="hidden" name="_captcha" value="false" />
           <fieldset>
             <legend><b>SOLICITE UM ORÇAMENTO</b></legend>
-            <br>
+            <br />
             <div class="inputBox">
-              <input type="text" name="nome" id="nome" class="inputUser" required>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                class="inputUser"
+                required
+              />
               <label for="nome" class="labelInput">Nome Completo</label>
             </div>
-            <br>
+            <br />
             <div class="inputBox">
-              <input type="text" name="email" id="email" class="inputUser" required>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="inputUser"
+                required
+              />
               <label for="email" class="labelInput">Email</label>
             </div>
-            <br>
+            <br />
             <div class="inputBox">
-              <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+              <input
+                type="tel"
+                name="telefone"
+                id="telefone"
+                class="inputUser"
+                required
+              />
               <label for="telefone" class="labelInput">Telefone</label>
             </div>
-            <br>
+            <br />
             <div class="inputBox">
-              <input type="text" name="tipo-material" id="tipo-material" class="inputUser" required>
-              <label for="tipo-material" class="labelInput">Tipo de Material</label>
+              <input
+                type="text"
+                name="tipo-material"
+                id="tipo-material"
+                class="inputUser"
+                required
+              />
+              <label for="tipo-material" class="labelInput"
+                >Tipo de Material</label
+              >
             </div>
-            <br>
-            <input type="submit" name="submit" id="submit">
+            <br />
+            <input type="submit" name="submit" id="submit" />
           </fieldset>
         </form>
       </div>
     </section>
 
     <footer>
-      <div class="footer"></div>
+      <div class="footer" id="contatoid"></div>
     </footer>
   </body>
 </html>
