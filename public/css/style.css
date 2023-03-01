@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@200;400;500;600;800&display=swap');
 
 * {
   padding: 0;
@@ -78,4 +78,37 @@
   margin-left: -190px;
   margin-bottom: -10px;
   transform: rotate(-15deg);
+}
+
+.infos {
+  background-color: #ff2323;
+  height: 365px;
+}
+
+.area-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-info {
+  font-size: 37px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.img-tijolo {
+  width: 350px;
+  height: 328px;
+}
+
+.infos-direita p {
+  font-size: 20px;
+  text-align: justify;
+  color: #ffffff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  padding: 30px;
 }
