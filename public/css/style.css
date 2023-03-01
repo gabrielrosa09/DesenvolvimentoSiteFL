@@ -5,6 +5,8 @@
   margin: 0;
 }
 
+/* Parte CSS da nav institucional */
+
 .nav {
   display: flex;
   align-items: center;
@@ -46,43 +48,6 @@
   color: #ffffff;
 }
 
-/*
-.home {
-  width: 100%;
-  background-color: #ffffff;
-}
-
-.frase-home1 {
-  font-size: 56px;
-  letter-spacing: -3px;
-  line-height: 72px;
-  color: #3b3f50;
-  font-weight: bold;
-  font-family: "Outfit", sans-serif;
-  text-align: center;
-  padding-bottom: 50px;
-  margin-right: 30px;
-}
-.frase-home2 {
-  font-size: 85px;
-  letter-spacing: -6px;
-  line-height: 65px;
-  color: #ff2323;
-  font-weight: bold;
-  font-family: "Outfit", sans-serif;
-  text-align: center;
-  margin-right: 30px;
-}
-
-.logo {
-  margin: 0;
-  opacity: 0.3;
-  margin-left: -190px;
-  margin-bottom: -10px;
-  transform: rotate(-15deg);
-}
-
-*/
 /* Parte CSS da home institucional */
 
 .home {
