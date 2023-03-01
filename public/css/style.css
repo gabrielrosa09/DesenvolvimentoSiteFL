@@ -184,7 +184,6 @@
   justify-content: center;
   width: 1260px;
   height: 413px;
-  background-color: #000000;
   border: 8.812009948839348px solid #ff2323;
   margin-bottom: 50px;
 }
@@ -274,6 +273,8 @@ legend {
   font-size: 14px;
   color: #ff2323;
 }
+
+
 
 #submit {
   background-image: linear-gradient(to right, #ff2323, #ff5353);
