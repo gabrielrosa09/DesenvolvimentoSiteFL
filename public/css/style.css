@@ -341,6 +341,17 @@ legend {
 .icon {
   padding: 1px;
 }
+.footer-copyright {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ff2323;
+}
 
 /* Whatsapp */
 
