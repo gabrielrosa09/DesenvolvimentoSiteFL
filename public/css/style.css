@@ -341,3 +341,12 @@ legend {
 .icon {
   padding: 1px;
 }
+
+/* Whatsapp */
+
+.wpp {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9999;
+}
