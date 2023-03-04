@@ -10,11 +10,6 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>FL Tijolos</title>
     <link rel="icon" type="image/png" href="img/logo.png" />
-    <script>
-      function funcao1() {
-        alert("Email enviado!");
-      }
-    </script>
   </head>
 
   <body>
@@ -36,7 +31,7 @@
 
     <!-- HOME -->
 
-    <div class="home" id="homeid">
+    <section class="home">
       <div class="home-esquerda">
         <div class="texto-azul-1">O FUTURO DA CONSTRUÇÃO</div>
         <div class="texto-azul-2">CHEGOU!</div>
@@ -45,12 +40,10 @@
         <div class="button">
           <a href="#boxid" class="btn btn-home">FAZER ORÇAMENTO</a>
         </div>
-        <img class="logo" src="/img/logo.png" />
+        <img class="logo" src="/img/logo.png" alt="logo da FL"/>
       </div>
-      <div class="home-direita">
-        <img class="img-homem" src="/img/homem.png" />
-      </div>
-    </div>
+      <div class="home-direita"></div>
+    </section>
 
     <!-- INFORMACOES -->
     <div class="infos">
@@ -108,6 +101,7 @@
           target="_blank"
           action="https://formsubmit.co/FLTijolos@gmail.com"
           method="POST"
+          id="id-form"
         >
           <input
             type="hidden"
@@ -173,14 +167,13 @@
                 required
               />
               <label for="tipo-material" class="labelInput"
-                >Informações Adicionais (Ex: Quantidade, Data, entre
-                outros)</label
+                >Informações Adicionais</label
               >
             </div>
             <input
               type="submit"
               name="submit"
-              onclick="funcao1()"
+              onclick="mensagem()"
               id="submit"
             />
           </fieldset>
@@ -229,5 +222,11 @@
         />
       </a>
     </div>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function() {
+        alert('Email enviado!');
+      });
+    </script>
   </body>
 </html>
